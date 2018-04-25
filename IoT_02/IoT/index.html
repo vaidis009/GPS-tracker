@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>IoT- GPS Tracker</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="iot.png" type="image/x-icon">
+    <link rel="icon" href="iot.png" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current">
+                    <a class="smoothscroll" href="#home" title="home">Home</a>
+                </li>
+                <li>
+                    <a class="smoothscroll" href="#about" title="about">About</a>
+                </li>
+                <li>
+                    <a class="smoothscroll" href="#works" title="works">Bits & Pieces</a>
+                </li>
+                <li>
+                    <a class="smoothscroll" href="#team" title="team">The team</a>
+                </li>
+                <!--   <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li> -->
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0">
+            <span>Menu</span>
+        </a>
+
+    </header>
+    <!-- end s-header -->
+
+
+    <!-- home
+   ================================================== -->
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/iot.jpg" data-natural-width=3000
+        data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Internet of things</h3>
+
+                <h1>
+                    GPS tracker
+                    <br> Vaidas Siupienius
+                    <br> & Zoltan Fuzesi.
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#works" class="smoothscroll btn btn--stroke">
+                        Bits & Pieces
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        IoT
+                    </a>
+                </div>
+
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end home-content -->
+
+
+
+    </section>
+    <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3>The ultimate solution</h3>
+                <h1>GPS tracker</h1>
+                <p class="lead">Realtime GSM+GPS Tracking of Vehicles Using Arduino an AI thinker</p>
+            </div>
+        </div>
+
+        <div class="row about-content">
+
+            <div class="col-six tab-full left">
+                <h3>The Idea</h3>
+
+                <p>A hidden car tracker.</p>
+
+                <p>
+                    In these days, you often hear on the radio how may cars get stolen. These news make us worried and we are afraid to leave our car
+                    parked even in trusted or untrusted locations. The idea for this project is to create a prototype for a GPS tracker 
+                    which can be used to track our car, as it sends back the exact GPS location of the car by using the GSM network. 
+                    This prototype can't protect our car from getting stolen, but using this technology, the car can be tracked in real time.
+                    <br>The main goal is to get back the exact location of the device/car by sending an SMS to it, and the GPS tracker uses the GPS and GSM network
+                    will determine the exact location and send it back to a specific phone number. It will help to find 
+                    the stolen or lost car by the GPS position.
+
+                </p>
+            </div>
+
+            <div class="col-six tab-full right">
+                <h3>Difficulties.</h3>
+
+                <ul class="skill-bars">
+                    <li>
+                        <div class="progress percent100">
+                            <span>100%</span>
+                        </div>
+                        <strong>FIND PARTS</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent50">
+                            <span>50%</span>
+                        </div>
+                        <strong>ASSEMBLING</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent80">
+                            <span>80%</span>
+                        </div>
+                        <strong>CODE</strong>
+                    </li>
+
+
+                    <li>
+                        <div class="progress percent95">
+                            <span>95%</span>
+                        </div>
+                        <strong>TESTING</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent35">
+                            <span>35%</span>
+                        </div>
+                        <strong>DOCUMENTING</strong>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- end about-content -->
+        <div class="row about-content">
+
+            <h3>The plan</h3>
+            <p>
+                Using Arduino Uno and AI Thinker (A7) GSM & GPS module to build real time vehicle tracker system prototype, to find a car if it gets stolen.
+                Most of the time, when you search on the web to find an idea to make your own project, you can find many successful, or at least,
+                working projects. We got our idea from the following website <a href="https://www.cooking-hacks.com/projects/arduino-realtime-gps-gprs-vehicle-tracking" target="_blank">Where is my car</a>. <br>
+                This team uses more expensive GSM & GPS module, and it seems they successfuly built the prototype. We are using different parts to 
+                build our prototype, because the same parts are not available or are difficult to get. Our team used AI Thinker GSM & GPS module, since it
+                seems easy to get it to work. <a href="https://www.youtube.com/watch?v=H7eBurjWC0k&t=32s" target="_blank">AI Thinker test</a><br>
+                The guy in the video gets very good GPS signal and positions with an external antenna. So, we decided to use this module with 
+                an external antenna to our prototype. At the end, if we can get good GPS position from the prototype, as an extra to the project, we could build a sigle web page
+                to display the actual position of the device.
+                
+                
+            </p>
+            
+
+
+        </div>
+        <!-- end about-content -->
+
+
+
+        <div class="row about-content">
+
+            <h3>The result </h3>
+            <p>
+                Finnaly the GPS tracker prototype was created. This prototype will allow you to receive a SMS message and respond to 
+                a specific phone number with a SMS message. The response SMS message should contain the actual GPS location of the prototype, that is hidden in the car somewhere.
+             </p>
+              <h4>The problem.</h4>  
+             <p>
+                The AI Thinker SMS, phone call and GPS functions are working, but the GPS locations are not fixed at all. We got
+                all the required functionalities working in the module, to make the project a success, but the GPS location returned by the AI Thinker module
+                are not just not good enough to determine the location of the vehicle, it is completely unusable. 
+             </p>
+             <h5>Sample output.</h5>
+             <p>+GPSRD:&GPGGA,155037.000,5249.58x27,N,00653.10519,W,1,06,1.2,116.4M356.0</p>
+             <p>+GPSRD:$GPGT⸮⸮⸮⸮⸮⸮⸮r⸮⸮⸮b⸮⸮⸮⸮r⸮⸮⸮br⸮⸮⸮⸮⸮⸮r⸮⸮⸮⸮⸮b⸮⸮)b⸮⸮b⸮r⸮b⸮⸮⸮r⸮bj⸮bj⸮b⸮⸮⸮⸮R⸮⸮j</p>
+             <p>+GPSQD:$GPGGA,156`37.000,524<^59823,N,00756.10526,W,L	⸮b⸮r⸮b⸮⸮⸮r⸮bj⸮bj⸮⸮j</p>
+
+
+                <p>To get the actual GPS position, different types of hardware can produce different results, and it seems the GPS antenna is
+                    not the best to work together with the Ai Thinker A7 module. But the good news is, we are not alone ! After we get the 
+                    unusable GPS result from the AI Tinker, the required problem solving process helps us to find the wrong side of the module as well. 
+                    <a href="https://stackoverflow.com/questions/48177488/arduino-gps-gsm-receiver-unoa7-elecrow?rq=1" target="_blank">Problem with AI Thinker</a>
+                     and <a href="https://www.youtube.com/watch?v=qLcmxDH4pe0" target="_blank">GPS location problem</a>
+                    <br>Our team went through all of the possible problem solving processes, that we could find on the Internet, but the result didn't get any better.
+                    Because the previous projects got it working correctly, as the possible solution, a different GPS antenna or a signal booster should help
+                    find better GPS signal.  
+                    
+            </p>
+
+
+        </div>
+
+        <!-- tutorial
+    ================================================== -->
+        <section id="tutorial" class="s-about target-section">
+
+            <div class="row narrow section-intro has-bottom-sep">
+                <div class="col-full text-center">
+                    <h3>The prototype</h3>
+                    <h1>Building process</h1>
+                    <div class="videoWrapper">
+                        <!--<iframe width="700" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>-->
+                        <video width="700" height="345" controls>
+                        <source src="video/GPS.mp4" type="video/mp4">
+                       <!-- <source src="video/GPS.webm" type="video/webm">
+                        <track label="English" kind="subtitles" srclang="en" src="video/GPS.vtt" default>-->
+					</video>
+                    </div>
+                    <br>
+                    <h1>How it should work</h1>
+                    <p>Because some parts not working as it suppose to and there is no time and budget for future experiments,
+                        we needed to mimic some part of the system to show what would be the final product.
+                    </p>
+                    <div class="videoWrapper">
+                        <iframe width="700" height="345" src="https://www.youtube.com/embed/IklmBx7NnTw?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				
+                    </div>
+                    <br>
+                    <h3></h3>
+                    <a href="http://serversite.info/iot/gpos.php?latitude=52.827297&longitude=-6.937482" target="_blank">Try out the web API</a>
+                    <br>
+                    <br>
+                    <h1>Final result</h1>
+                    <p>Finnaly the GPS tracker working with pre-loaded GPS locations for demo purposes. It is waiting for SMS, then it starts
+                        sending the locations every twenty seconds.
+                    </p>
+                    <div class="videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zvXmeWgEOlU?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <a href="#0">
+                            <i class="im im-github" aria-hidden="true" style="color:#522E2B" onclick="window.open('https://github.com/vaidis009/GPS-tracker.git')"
+                                target="_blank">
+                                <span style="color:#522E2B">Github</span>
+                            </i>
+                        </a>
+                </div>
+               
+            </div>
+            
+        </section>
+        <!-- end about -->
+
+
+        <!-- works
+    ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div class="row narrow section-intro has-bottom-sep">
+                <div class="col-full">
+                    <h3>Bits & Pieces</h3>
+                    <h1>GPS tracker main parts.</h1>
+
+                    <p class="lead">Arduino Uno, Arduino IDE, GPS & GSM arial, Power monkey, AI Thinker, GSM sim card.</p>
+                </div>
+            </div>
+
+            <div class="row masonry-wrap">
+                <div class="masonry">
+
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-beetle.png" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                    <img src="images/portfolio/beetle.png" srcset="images/portfolio/beetle.png 1x, images/portfolio/beetle@2x.png 2x" alt="">
+                                    <span class="shadow-overlay"></span>
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Arduino IDE
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Open source software
+                                </p>
+                            </div>
+
+                            <a href="https://www.arduino.cc/en/main/software" class="item-folio__project-link" title="Project link">
+                                <i class="im im-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p> The open-source Arduino Software (IDE) makes it easy to write code and upload it to the board..</p>
+                            </div>
+
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-lighthouse.jpg" class="thumb-link" title="Lighthouse" data-size="1050x700">
+                                    <img src="images/portfolio/lighthouse.jpg" srcset="images/portfolio/lighthouse.jpg 1x, images/portfolio/lighthouse@2x.jpg 2x"
+                                        alt="">
+                                    <span class="shadow-overlay"></span>
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    GSM sim card
+                                </h3>
+                                <p class="item-folio__cat">
+                                    simple sim card
+                                </p>
+                            </div>
+
+                            <a href="https://n.vodafone.ie/en.html" class="item-folio__project-link" title="Project link">
+                                <i class="im im-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>Global System for Mobile Communications. .</p>
+                            </div>
+
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-salad.jpg" class="thumb-link" data-size="1050x700">
+                                    <img src="images/portfolio/salad.jpg" srcset="images/portfolio/salad.jpg 1x, images/portfolio/salad@2x.jpg 2x" alt="">
+                                    <span class="shadow-overlay"></span>
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    GSM - GPS arial
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Signal receiver
+                                </p>
+                            </div>
+
+                            <a href="https://ie.rs-online.com/web/c/?searchTerm=gsm+gps&sra=oss&r=t" class="item-folio__project-link" title="Project link">
+                                <i class="im im-link"></i>
+                            </a>
+
+                            <span class="item-folio__caption">
+                                <p>GSM/GPS Rugged 'Puck' Quad-Band Antenna.</p>
+                            </span>
+
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" data-size="1050x700">
+                                    <img src="images/portfolio/woodcraft.jpg" srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x"
+                                        alt="">
+                                    <span class="shadow-overlay"></span>
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    AI thinker
+                                </h3>
+                                <p class="item-folio__cat">
+                                    GPS & GSM module
+                                </p>
+                            </div>
+
+                            <a href="http://androegg.com/?product=ai-thinker-a6-gprs-gsm-quad-band-modul" class="item-folio__project-link" title="Project link">
+                                <i class="im im-link"></i>
+                            </a>
+
+                            <span class="item-folio__caption">
+                                <p>A7 GSM GPRS & GPS, Module Support for GSM / GPRS four bands, including 850,900,1800,1900MHZ.</p>
+                            </span>
+
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-skaterboy.jpg" class="thumb-link" data-size="1050x700">
+                                    <img src="images/portfolio/skaterboy.jpg" srcset="images/portfolio/skaterboy.jpg 1x, images/portfolio/skaterboy@2x.jpg 2x"
+                                        alt="">
+                                    <span class="shadow-overlay"></span>
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Power monkey
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Power supply
+                                </p>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="im im-link"></i>
+                            </a>
+
+                            <span class="item-folio__caption">
+                                <p>The portable power.</p>
+                            </span>
+
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-liberty.png" class="thumb-link" data-size="1050x700">
+                                    <img src="images/portfolio/liberty.png" srcset="images/portfolio/liberty.png 1x, images/portfolio/liberty@2x.png 2x" alt="">
+                                    <span class="shadow-overlay"></span>
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Arduino Uno
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Main board
+                                </p>
+                            </div>
+
+                            <a href="https://ie.rs-online.com/web/c/?sra=oss&r=t&searchTerm=arduino+uno" class="item-folio__project-link" title="Project link">
+                                <i class="im im-link"></i>
+                            </a>
+
+                            <span class="item-folio__caption">
+                                <p>The UNO is the most used and documented board of the whole Arduino family.</p>
+                            </span>
+
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+
+                </div>
+            </div>
+            <!-- end masonry -->
+
+        </section>
+        <!-- end works -->
+
+
+
+        <!-- testimonials
+    ================================================== -->
+        <section id="team" class="target-section">
+            <div class="s-testimonials">
+
+                <div class="overlay"></div>
+
+                <div class="row testimonials-header">
+                    <div class="col-full">
+                        <h1 class="h02">The team.</h1>
+                    </div>
+                </div>
+
+                <div class="row testimonials">
+
+                    <div class="col-full testimonials__slider">
+
+                        <div class="testimonials__slide">
+                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                            <p>It’s fun to build things! Specially if you have budget and time!</p>
+                            <div class="testimonials__author h06">
+                                Zoltan Fuzesi
+                                <span> Bachelor(Honours) in Software Development</span>
+                                <span>C00197361@itcarlow.ie</span>
+                                <span> (+353) 89 964 3837</span>
+                            </div>
+                        </div>
+
+                        <div class="testimonials__slide">
+                            <img src="images/avatars/Vaidas Siupienius.jpg" alt="Vaidas Siupienius, Software Developer" class="testimonials__avatar">
+                            <p>Interesting project, but as always a lot of fun! </p>
+                            <div class="testimonials__author h06">
+                                Vaidas Siupienius
+                                <span> Bachelor(Honours) in Software Development</span>
+                                <span> vsiupienius@gmail.com</span>
+                                <span> (+353) 87 3162262</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end testimonials__slider -->
+
+                </div>
+                <!-- end testimonials -->
+
+            </div>
+            <!-- end s-testimonials -->
+        </section>
+
+
+        <!--  
+    
+    <section id="contact" class="s-contact target-section">
+
+        <div class="overlay"></div>
+
+        <div class="row narrow section-intro">
+            <div class="col-full">
+                <h3>Contact</h3>
+                <h1>Say Hello to the team.</h1>
+                
+                <p class="lead">If you like our prototype you can connect with the team by email or by phone.</p>
+            </div>
+        </div>
+
+        <div class="row contact__main">
+         
+            <div class="col-four tab-full contact__infos">
+                <h4 class="h06">Phone</h4>
+                <p>Vaidas Phone: (+353) 873162262<br>
+                Zoltan Mobile: (+353) 899643837
+                </p>
+
+                <h4 class="h06">Email</h4>
+                <p>Vaidas vaidis009@yahoo.com C00197220@itcarlow.ie<br>
+                Zoltan C00197361@itcarlow.ie
+                </p>
+
+                <h4 class="h06">Address</h4>
+                <p>
+                Kilkenny road, Carlow</br>
+                IT Carlow
+                </p>
+            </div>
+
+        </div>
+
+    </section>  -->
+
+
+        <!-- footer
+    ================================================== -->
+        <footer>
+            <div class="row">
+                <div class="col-full">
+
+                    <div class="footer-logo">
+                        <a class="footer-site-logo" href="#0">
+                            <img src="images/logo.png" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <ul class="footer-social">
+                        <!--     <li ><a href="#0">
+                        <i class="im im-facebook" aria-hidden="true" style="color:#522E2B"></i>
+                        <span style="color:#522E2B">Facebook</span>
+                    </a></li>  -->
+                        <li>
+                            <a href="#0">
+                                <i class="im im-github" aria-hidden="true" style="color:#522E2B" onclick="window.open('https://github.com/vaidis009/GPS-tracker.git')"
+                                    target="_blank">
+                                    <span style="color:#522E2B">Github</span>
+                                </i>
+                            </a>
+                        </li>
+                        <!--      <li><a href="#0">
+                        <i class="im im-instagram" aria-hidden="true" style="color:#522E2B"></i>
+                        <span style="color:#522E2B">Instagram</span>
+                    </a></li> -->
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="row footer-bottom">
+
+                <div class="col-twelve">
+                    <div class="copyright">
+                        <span style="color:#522E2B">GPS tracker prototype © Copyright 2018
+                            <a href="http://www.styleshout.com/">Styleshout</a>
+                        </span>
+                    </div>
+
+                    <div class="go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top">
+                            <i class="im im-arrow-up" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end footer-bottom -->
+
+        </footer>
+        <!-- end footer -->
+
+
+        <!-- photoswipe background
+    ================================================== -->
+        <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end photoSwipe background -->
+
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+
+
+        <!-- Java Script
+    ================================================== -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>
